@@ -84,10 +84,12 @@
 
                 <Button
                     android:id="@+id/ok_login"
+                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@android:color/holo_blue_light"
                     android:padding="10dp"
                     android:text="login"
                     android:textColor="@android:color/white"
@@ -96,118 +98,22 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/signup_layout"
-                android:layout_width="85dp"
-                android:layout_height="89dp"
-                android:orientation="vertical"
-                android:visibility="gone">
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColorHint="@color/white">
-
-                    <EditText
-                        android:id="@+id/input_firstname_signup"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/first_name"
-                        android:inputType="text"
-                        android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white" />
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/white">
-
-                    <EditText
-                        android:id="@+id/input_lastname_signup"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/last_name"
-                        android:inputType="text"
-                        android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white" />
-                </android.support.design.widget.TextInputLayout>
-
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/white">
-
-                    <EditText
-                        android:id="@+id/input_email_signup"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/email_id"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white" />
-                </android.support.design.widget.TextInputLayout>
-
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/white"
-                    app:passwordToggleDrawable="@drawable/icon_selector"
-                    app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/white">
-
-                    <EditText
-                        android:id="@+id/input_pass_signup"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/password"
-                        android:inputType="textPassword"
-                        android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white" />
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/white"
-                    app:passwordToggleDrawable="@drawable/icon_selector"
-                    app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/white">
-
-                    <EditText
-                        android:id="@+id/input_confirm_pass_signup"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/confirm_password"
-                        android:inputType="textPassword"
-                        android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white" />
-                </android.support.design.widget.TextInputLayout>
-
-
-
-
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <TextView
+                <EditText
                     android:id="@+id/signup"
-                    android:layout_width="50dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:gravity="end"
+                    android:background="@android:color/holo_blue_dark"
                     android:text="Sign up"
                     android:textAlignment="center"
                     android:textColor="@android:color/holo_red_light" />
